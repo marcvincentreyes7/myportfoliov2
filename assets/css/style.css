@@ -1,0 +1,339 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*#logo {
+	color: red;
+}
+
+[class*=col] {
+	background-color: lightgrey;
+	border: 1px solid black;
+}
+*/
+
+
+.ii {
+    position: relative;
+    bottom: 15px;
+    left: 50%;
+}
+
+.iii{
+    font-size: 1.5em;
+    color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*display: inline-block;*/
+}
+
+#footList {
+    display: inline-block;
+}
+
+
+.navAlign {
+    position: relative;
+    top: 8px;
+}
+
+
+
+#form_container
+{
+
+    background: rgba(255,255,255,0.75);
+}
+
+#showContact
+{
+    background-color: #F4EAD5;
+    background-size: cover;
+    max-width: 700px;
+}
+
+
+#home{
+    margin-right: 6px;
+}
+
+#about{
+margin-right: 6px;
+}
+
+#htmlImg{
+    width: 100px;
+}
+
+#skillsList {
+    /*display: inline-block;*/
+    padding: 20px;
+    display: inline-table;
+}
+
+ul{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*for button design*/
+
+#clickMe{
+    /*color: #d5402b;;*/
+    position: relative;
+    border:3px solid white;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+
+#insideBtnTxt{
+    color: white;
+    font-weight: bold;
+}
+
+#insideBtnRight{
+    float: left;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    transition: right 0.7s;
+    width: 50px;
+    height: 100px;
+    background-color: white;
+}
+
+#insideBtnLeft{
+    float: left;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    transition: left 0.7s;
+    width: 50px;
+    height: 100px;
+    background-color: white;
+}
+
+#clickMe:hover #insideBtnRight{
+    float: left;
+    position: absolute;
+    top: -20px;
+    right: 810px;
+    transition: right 0.7s;
+    width: 50px;
+    height: 100px;
+    background-color: red;
+}
+
+#clickMe:hover #insideBtnLeft{
+    float: left;
+    position: absolute;
+    top: -20px;
+    left: 810px;
+    transition: left 0.7s;
+    width: 50px;
+    height: 100px;
+    background-color: red;
+}
+
+#clickMe:hover{
+    /*color: #d5402b;;*/
+    position: relative;
+    border:3px solid red;
+    background-color: white;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#clickMe:hover #insideBtnTxt{
+    color: red;
+    font-weight: bold;
+}
+
+/*end of button design*/
+
+
+
+
+
+
+
+
+
+
+
+.clear {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+#modalFont {
+    color: black;
+}
+
+
+body {
+
+    background: url(../images/bg-02.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /*targets google chrome and safari web browser*/
+    -moz-background-size: cover; /*mozilla*/
+    -o-background-size: cover; /*opera*/
+    background-size: cover;
+} 
+
+
+
+footer {
+    padding-top: 100px;
+}
+
+
+#facebook:hover {
+
+}
+
+
+
+
+.zoom:hover {
+    transform: scale(1.5);
+
+}
+
+.hoverText {
+    position: relative;
+    display: inline-block;
+  /*  border-bottom: 1px dotted black;*/
+}
+
+
+.hoverText .hoverTextShow {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 99999;
+    transform: translate(-55%, -55%);
+}
+
+.hoverText:hover .hoverTextShow {
+    visibility: visible;
+}
+
+
+
+/*content*/
+
+/*.invisible {
+    height: 200px;
+}*/
+
+#hi {
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+#imMac {
+    color: orange;
+}
+
+/*#box {
+    width: 270px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}*/
+
+#mePic{
+    border-radius: 200px;
+}
+
+#section1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#section2 {
+    margin-top: 40px;
+}
+
+#sectionBody {
+    padding: 25px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(110, 50, 0);
+    margin-top: : 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+
+.paragraph {
+    text-indent:30px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 400px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {*/
+
+@media (min-width: 220px) and (max-width: 450px) {
+
+#mePic{
+    width: 100px;
+}
+
+#aboutMe {
+    padding: 25px;
+    color: white;
+    height: 250px;
+    width: 100%;
+    background-color: rgba(110, 50, 0);
+    margin-top: : 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.paragraph {
+    text-indent:30px;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    justify-content: center;
+}
+
+#skillsList{
+    width: 20px;
+    display: inline-table;
+    padding: 10px;
+}
+
+}

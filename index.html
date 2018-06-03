@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title></title>
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- extrnal css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- external link - font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	
+	<!-- fab icon -->
+	<link rel="icon" type="image/gif/png" href="assets/images/bbb.png">
+
+ 
+</head>
+<body>
+
+	<div class="container-fluid">
+	<header class="row fixed-top">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+				<a class="navbar-brand" href="#" id="logo"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+
+					<li class="nav-item ml-auto navAlign" id="home"> <!-- navAlign - to make the items on the center of nav -->
+						<a class="nav-link" href="#hi"> <i class="fas fa-home ii"></i>Home</a>
+					</li>
+
+					<li class="nav-item ml-auto navAlign" id="about">
+						<a class="nav-link" href="#aboutMeInvisible"> <i class="fas fa-info-circle ii"></i>About</a>
+					</li>
+
+					<li class="nav-item ml-auto navAlign" id="contact">
+							<a class="nav-link btn"  data-toggle="modal" data-target="#myModal"><i class="fas fa-envelope ii"></i>Contact</a>
+					</li>
+				</ul>
+			</div>
+
+			</nav>
+		</div>
+	</header>
+
+
+
+
+<!-- modal testing -->
+
+
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		          
+		        <div class="card" id="showContact">
+					<div class="card-body col-md-12 col-sm-12 col-12">
+						<div class=""></div>
+					    <div id="form_container">
+					        <h2 id="modalFont">Contact Us</h2>
+					        <p id="modalFont">
+					           Please send your message below. We will get back to you at the earliest!
+					        </p>
+					        <form role="form" method="post" id="reused_form">
+
+					        	<div class="row">
+					                <div class="col-sm-6 form-group">
+					                    <label for="name">
+					                        Your Name:</label>
+					                    <input type="text" class="form-control" id="name" name="name" required>
+					                </div>
+					                <div class="col-sm-6 form-group">
+					                    <label for="email">
+					                        Email:</label>
+					                    <input type="email" class="form-control" id="email" name="email" required>
+					                </div>
+					            </div>
+
+					            <div class="row">
+					                <div class="col-sm-12 form-group">
+					                    <label for="message">
+					                        Message:</label>
+					                    <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+					                </div>
+					            </div>
+
+					            <div class="row">
+					                <div class="col-sm-12 form-group">
+					                    <button type="button" class="btn btn-md" data-dismiss="modal">Send →</button>
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					                </div>
+					            </div>
+
+					        </form>
+					        
+
+					    </div>
+					    </div> <!-- end row, end card body -->
+					</div>  <!-- end card -->
+
+				</div> <!-- end of email beta -->
+		     </div>
+		 </div> <!-- end of modal -->
+
+
+
+
+	 <!-- content -->
+
+	 	
+			<div id="hi" class="row">
+				<div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+					<img id="mePic" src="assets/images/me.jpg">
+					<h1 id="imMac">Hi I'm Mac</h1>
+					<h4>Web Developer</h4>
+					<p>I'm Glad that you visit my portfolio. Since you are here, come and check more of me. :)</p>
+				</div>
+			</div>
+			<div class="invisible" id="aboutMeInvisible"></div>
+			<section id="section1" class="row">
+				<div class="col-md-4 d-flex flex-column justify-content-center"></div>				
+				<div id="sectionBody" class="col-md-8 d-flex flex-column justify-content-center">
+						<h2>
+							About Me:
+						</h2>
+						<p class="paragraph">I'm a Computer Engineering graduate from Bulacan State University. I like computer games, traveling in different places, I love nature like forest, mountains, rivers.</p>
+						<p class="paragraph">I decided to be a web developer because I want to build a stunning website that everyone would like to visit EVERYDAY</p>										
+				</div>
+			</section>
+			
+			<section id="sectionMiddle" class="row">
+				<div div class="col-md-2 d-flex flex-column justify-content-center"></div>
+				<div id="sectionBody" div class="col-md-8 d-flex flex-column justify-content-center">
+					<h2>
+						My Skills and Tools:
+					</h2>
+					<p class="paragraph">Every language, every tools, every skills are like a stepping stone that leads us to the peak of victory</p>
+					<ul>
+						<li id="skillsList">
+							<img id="htmlImg" src="assets/images/html.png">
+						</li>
+						<li id="skillsList">
+							<img id="htmlImg" src="assets/images/css3.png">
+						</li>
+						<li id="skillsList">
+							<img id="htmlImg" src="assets/images/bootstrap-4-courses.png"> 
+						</li>
+					</ul>
+					<ul>
+						<li id="skillsList">
+							<img id="htmlImg" src="assets/images/js.png"> 
+						</li>
+
+						<li id="skillsList">
+							<img id="htmlImg" src="assets/images/ps.png">
+						</li>
+						<li id="skillsList">
+							<img id="htmlImg" src="assets/images/ms.png">
+						</li>
+					</ul>
+					
+				</div>
+				<div div class="col-md-2 d-flex flex-column justify-content-center"></div>
+			</section>
+
+			<section id="section2" class="row">
+				<div id="sectionBody" class="col-md-8 d-flex flex-column justify-content-center">
+						<h2>
+							Check my Work:
+						</h2>
+						<p class="paragraph">If you want to see my work, you can always check it, just click below.</p>						
+						<a href="https://marcvincentreyes7.github.io/out-of-this-world-journey/" target="_blank" class="btn" id="clickMe"><div id="insideBtnTxt">Out Of This World Journey</div><div id="insideBtnLeft"></div><div id="insideBtnRight"></div></a>	
+				</div>				
+				<div class="col-md-4 d-flex flex-column justify-content-center">															
+				</div>
+			</section>
+
+
+	<footer >
+				<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> -->
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+			<div id="footer-icons">
+				<ul class="navbar-nav text-center" id="footList">
+
+					<li class="nav-item zoom hoverText" id="facebook">
+						<a class="nav-link" href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook iii"></i><span class="hoverTextShow">Go to facebook.com</span></a>
+					</li>
+
+					<li class="nav-item zoom hoverText" id="twitter"> 
+						<a class="nav-link" href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter-square iii"></i><span class="hoverTextShow">Go to twitter.com</span></a>
+					</li>
+
+					<li class="nav-item zoom hoverText" id="github">
+						<a class="nav-link" href="https://github.com/" target="_blank"><i class="fab fa-github-square iii"></i><span class="hoverTextShow">Go to github.com</span></a>
+					</li>
+
+					<li class="nav-item zoom hoverText" id="gitlab">
+						<a class="nav-link" href="https://about.gitlab.com/" target="_blank"><i class="fab fa-gitlab iii"></i><span class="hoverTextShow">Go to gitlab</span></a>
+					</li>
+
+				</ul>
+			</div>
+
+		</nav>
+
+				<!-- </div> -->
+	</footer>
+
+	</div><!--  end of container fluid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- external custom js -->
+
+
+
+	<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- external bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
