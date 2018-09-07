@@ -6,7 +6,6 @@
 
 body{
     background-color: hsl(300, 100%, 5%);
-    overflow: hidden;
 }
 .navbar{
     background-color: darkblue!important;
@@ -105,38 +104,77 @@ body{
 
 @media only screen and (max-width: 40em) {
 
-#moonSurface{
-position: absolute;
-padding-top: 30vh;
-top: -10vh;
-height: 100vh;
-width: 200%;
-z-index: 5;
-}
-
-
-
-#moonSurface2{
-    position: relative;
-    height: 130vh;
-    width: 200%;
-    z-index: 10;
-}
-
-#moonBlur{
-    position: relative;
+    #moonSurface{
+    position: absolute;
+    padding-top: 30vh;
     top: -10vh;
-    height: 60vh;
-    width: 200%;
-    z-index: 15;
+    height: 100vh;
+    width: 250%;
+    z-index: 5;
+    }
+
+
+
+    #moonSurface2{
+        position: relative;
+        height: 130vh;
+        width: 250%;
+        z-index: 10;
+    }
+
+    #moonBlur{
+        position: relative;
+        top: -10vh;
+        height: 60vh;
+        width: 250%;
+        z-index: 15;
+    }
+
+    #moonBlur2{
+        position: relative;
+        top: -80vh;
+        height: 120vh;
+        width: 250%;
+        z-index: 15;
+    }
+
 }
 
-#moonBlur2{
-    position: relative;
-    top: -80vh;
-    height: 120vh;
-    width: 200%;
-    z-index: 15;
-}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+    #moonSurface{
+    position: absolute;
+    padding-top: 30vh;
+    top: -10vh;
+    height: 100vh;
+    width: 250%;
+    z-index: 5;
+    }
+
+
+
+    #moonSurface2{
+        position: relative;
+        height: 130vh;
+        width: 250%;
+        z-index: 10;
+    }
+
+    #moonBlur{
+        position: relative;
+        top: -10vh;
+        height: 60vh;
+        width: 250%;
+        z-index: 15;
+    }
+
+    #moonBlur2{
+        position: relative;
+        top: -80vh;
+        height: 120vh;
+        width: 250%;
+        z-index: 15;
+    }
 
 }
