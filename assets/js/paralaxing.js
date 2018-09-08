@@ -7,7 +7,7 @@ $.fn.moveIt = function(){
   });
   
   window.addEventListener('scroll', function(){
-    var scrollTop = $window.scrollTop();
+    var scrollTop = $window.scrollTop() - 1550;
     instances.forEach(function(inst){
       inst.update(scrollTop);
     });

@@ -11,6 +11,17 @@ body{
     background-color: darkblue!important;
 }
 
+.hiThere{
+    position: fixed;
+    color: white;
+    font-weight: bold;
+    font-size: 10vh;
+    top: 30vh;
+    text-align: center;
+    z-index: 300;
+}
+
+
 .zoom1{
     overflow: hidden;
     height: 85vh;
@@ -37,11 +48,24 @@ body{
 }
 
 
-#section2{
+.section2{
     position: absolute;
     height: 170vh;
     overflow: hidden;
-    top: 50vh;;
+    top: 50vh;
+}
+
+
+.tobeFix{
+    position: fixed;
+}
+
+
+.section2AfterFixed{
+    position: absolute;
+    height: 170vh;
+    overflow: hidden;
+    top: 200vh;
 }
 
 /*#section3{
@@ -50,10 +74,19 @@ body{
 }
 */
 
-#moonSurface{
+.moonSurface{
     position: absolute;
     padding-top: 30vh;
     top: -10vh;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+}
+
+.moonSurface2{
+    position: absolute;
+    padding-top: 30vh;
+    top: 500vh;
     height: 100vh;
     width: 100%;
     z-index: 5;
@@ -73,15 +106,26 @@ body{
     top: -10vh;
     height: 60vh;
     width: 100%;
-    z-index: 15;
+    z-index: 17;
 }
+
 
 #moonBlur2{
     position: relative;
     top: -80vh;
     height: 120vh;
     width: 100%;
-    z-index: 15;
+    z-index: 20;
+}
+
+#bgDiv{
+
+    position: absolute;
+    top: 400vh;
+    background-color: hsl(300, 100%, 5%);
+    min-height: 130vh;
+    width: 100%;
+    z-index: 0;
 }
 
 .container-fluid{
@@ -97,6 +141,44 @@ body{
     width: 100vw;
     z-index: -2000;
 }
+
+#empty{
+    min-height: 200vh;
+}
+
+#astronaut{
+    position: absolute;
+    top: 40vh;
+    left: 20vw;
+    height: 20vh;
+    z-index: 2000;
+}
+
+
+#chat1, #chat2, #chat3{
+    position: absolute;
+    top: 18vh;
+    left: 25vw;
+    height: 25vh;
+    width: 18em;
+    z-index: 2000;
+    display: none;
+}
+
+#chat4, #chat5{
+    position: absolute;
+    top: 50vh;
+    left: 25vw;
+    height: 25vh;
+    width: 18em;
+    z-index: 2000;
+    display: none;
+}
+
+
+
+
+
 
 
 
@@ -138,6 +220,26 @@ body{
         z-index: 15;
     }
 
+    #chat1, #chat2, #chat3{
+        position: absolute;
+        top: 18vh;
+        left: 25vw;
+        height: 25vh;
+        width: 12em;
+        z-index: 2000;
+        display: none;
+    }
+
+    #chat4, #chat5{
+        position: absolute;
+        top: 50vh;
+        left: 25vw;
+        height: 25vh;
+        width: 12em;
+        z-index: 2000;
+        display: none;
+    }
+
 }
 
 
@@ -168,6 +270,7 @@ body{
         width: 250%;
         z-index: 15;
     }
+
 
     #moonBlur2{
         position: relative;
