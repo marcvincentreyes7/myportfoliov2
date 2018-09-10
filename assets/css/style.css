@@ -6,6 +6,7 @@
 
 body{
     background-color: hsl(300, 100%, 5%);
+    height: 14631px;
 }
 .navbar{
     background-color: darkblue!important;
@@ -51,7 +52,7 @@ body{
 .section2{
     position: absolute;
     height: 170vh;
-    overflow: hidden;
+    /*overflow: hidden;*/
     top: 50vh;
 }
 
@@ -83,10 +84,10 @@ body{
     z-index: 5;
 }
 
-.moonSurface2{
+.moonSurfaceAfter{
     position: absolute;
     padding-top: 30vh;
-    top: 500vh;
+    top: 95vh;
     height: 100vh;
     width: 100%;
     z-index: 5;
@@ -99,6 +100,7 @@ body{
     height: 130vh;
     width: 100%;
     z-index: 10;
+    /*display: none;*/
 }
 
 #moonBlur{
@@ -107,15 +109,17 @@ body{
     height: 60vh;
     width: 100%;
     z-index: 17;
+    /*display: none;*/
 }
 
 
 #moonBlur2{
     position: relative;
-    top: -80vh;
+    top: -10vh;
     height: 120vh;
     width: 100%;
     z-index: 20;
+    /*display: none;*/
 }
 
 #bgDiv{
@@ -126,6 +130,7 @@ body{
     min-height: 130vh;
     width: 100%;
     z-index: 0;
+    display: none;
 }
 
 .container-fluid{
@@ -142,16 +147,31 @@ body{
     z-index: -2000;
 }
 
-#empty{
-    min-height: 200vh;
+/*#empty{
+    height: 900em;
 }
+*/
+
+/*#toBeTop{
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    z-index: 999999;
+    background-color: rgba(83,50, 34, 0.5);
+}*/
+/*html{
+    height: 900vh;
+}*/
 
 #astronaut{
     position: absolute;
     top: 40vh;
     left: 20vw;
     height: 20vh;
-    z-index: 2000;
+    z-index: 0;
 }
 
 
@@ -175,8 +195,47 @@ body{
     display: none;
 }
 
+#chat6{
+    position: absolute;
+    top: 18vh;
+    left: 25vw;
+    height: 25vh;
+    width: 18em;
+    z-index: 0;
+    display: none;
+}
 
+#mars{
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    height: 5vh;
+    z-index: 0;
+    display: none;
+}
 
+#marsColony{
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+#name{
+    position: fixed;
+    top: 50vh;
+    display: none;
+}
+
+#userName{
+    position: fixed;
+    top: 55vh;
+    display: none;
+}
 
 
 
@@ -191,7 +250,7 @@ body{
     padding-top: 30vh;
     top: -10vh;
     height: 100vh;
-    width: 250%;
+    width: 150%;
     z-index: 5;
     }
 
@@ -200,7 +259,7 @@ body{
     #moonSurface2{
         position: relative;
         height: 130vh;
-        width: 250%;
+        width: 150%;
         z-index: 10;
     }
 
@@ -208,7 +267,7 @@ body{
         position: relative;
         top: -10vh;
         height: 60vh;
-        width: 250%;
+        width: 150%;
         z-index: 15;
     }
 
@@ -216,7 +275,7 @@ body{
         position: relative;
         top: -80vh;
         height: 120vh;
-        width: 250%;
+        width: 150%;
         z-index: 15;
     }
 
@@ -250,7 +309,7 @@ body{
     padding-top: 30vh;
     top: -10vh;
     height: 100vh;
-    width: 250%;
+    width: 200%;
     z-index: 5;
     }
 
@@ -259,7 +318,7 @@ body{
     #moonSurface2{
         position: relative;
         height: 130vh;
-        width: 250%;
+        width: 200%;
         z-index: 10;
     }
 
@@ -267,7 +326,7 @@ body{
         position: relative;
         top: -10vh;
         height: 60vh;
-        width: 250%;
+        width: 200%;
         z-index: 15;
     }
 
@@ -276,7 +335,7 @@ body{
         position: relative;
         top: -80vh;
         height: 120vh;
-        width: 250%;
+        width: 200%;
         z-index: 15;
     }
 

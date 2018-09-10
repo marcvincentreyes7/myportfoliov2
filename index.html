@@ -26,7 +26,7 @@
 
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid" id="container">
 <!--Main Navigation-->
 <header>
 
@@ -67,8 +67,8 @@
 </header>
 <!--Main Navigation-->
 
-	<h1 class="">Hi there I'm Marc</h1>
-	<h1 id="count" style="position: fixed; top: 40vh; z-index: 3000; color: white; font-weight: bold;">count</h1>
+	<h1 style="position: fixed; top: 40vh; z-index: 3000; color: white; font-weight: bold;">scrollCount: <span id="count"></span></h1>
+	<h1 style="position: fixed; top: 30vh; z-index: 3000; color: white; font-weight: bold;">height: <span id="count2"></span></h1>
 
 	<div id="tobeFix" class="tobeFix">
 		<div id="bg1"> <!-- data-scroll-speed="8" -->
@@ -79,7 +79,7 @@
 		</section>
 
 		<section id="section2" class="section2">
-			<img id="moonSurface" class="moonSurface" src="assets/images/moonSurface.png" > <!-- data-scroll-speed="9.9" -->
+			<img id="moonSurface" class="moonSurface" src="assets/images/moonSurface.png"> <!-- data-scroll-speed="9.9" -->
 			<img id="moonSurface2" src="assets/images/moonSurface2.png" > <!-- data-scroll-speed="2" -->
 			<img id="moonBlur" src="assets/images/moonBlur.png" > <!-- data-scroll-speed="1.5" -->
 			<img id="moonBlur2" src="assets/images/moonBlur2.png" > <!-- data-scroll-speed="1.5" -->
@@ -90,106 +90,29 @@
 		<img id="chat3" src="assets/images/3.png">
 		<img id="chat4" src="assets/images/4.png">
 		<img id="chat5" src="assets/images/5.png">
+		<img id="chat6" src="assets/images/6.png">
+		<img id="mars" src="assets/images/mars.png">
+		<img id="marsColony" src="assets/images/marsColony.jpg">
+		<input id="name" type="text" name="name" autocomplete="off">
+		<button id="userName" class="btn btn-primary" type="btn" onclick="userName()">submit</button>
+		<p id="inputValue" style="display: none">hello</p>
 		
 	</div>
 	<div id="bgDiv" ></div> <!-- data-scroll-speed="1.5" -->
+	<div id="empty"></div>
 
 </div> <!-- end of container-fluid -->
 
 
+<script type="text/javascript">
+	function userName(){
+		var name = $("#name").val();
 
-<!-- <script>
-        $(window).scroll(function() {
-			  var scroll = $(window).scrollTop();
-
-			  if(scroll >= 800){
-			  	$(".zoom1").hide();
-			  }else{
-			  	$(".zoom1").show();
-				$(".zoom1 img").css({
-					transform: 'translate3d(10%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/10)/100+')',
-					marginLeft: (scroll/2)
-				});
-			  }
-
-			});
-</script> -->
-
-
-<script>
-        $(window).scroll(function() {
-			  var scroll = $(window).scrollTop();
-			  var scroll2 = 0;
-
-			  if(scroll < 1550){
-			  	$("#tobeFix").addClass("tobeFix");
-			  	$("#section2").addClass("section2");
-			  	$("#section2").removeClass("section2AfterFixed");
-			  	$("#moonSurface").removeClass("moonSurface2");
-			  	$("#moonSurface").addClass("moonSurface");
-			  	$("#bg1").removeAttr("data-scroll-speed",8);
-			  	$("#moonSurface").removeAttr("data-scroll-speed",9.9);
-			  	$("#moonSurface2").removeAttr("data-scroll-speed",2);
-			  	$("#moonBlur").removeAttr("data-scroll-speed",1.5);
-			  	$("#moonBlur2").removeAttr("data-scroll-speed",1.5);
-			  	$("#bgDiv").removeAttr("data-scroll-speed",1.5);
-				$(".zoom1 img").css({
-					transform: 'translate3d(10%, -'+(scroll2/100)+'%, 0) scale('+(100 + scroll2/10)/100+')',
-					marginLeft: (scroll2/2)
-				});
-				if(scroll >= 0 && scroll < 300){
-					$("#chat1").show();
-					$("#chat2").hide();
-					$("#chat3").hide();
-					$("#chat4").hide();
-					$("#chat5").hide();
-				}else if(scroll >= 300 && scroll < 600){
-					$("#chat1").hide();
-					$("#chat2").show();
-					$("#chat3").hide();
-					$("#chat4").hide();
-					$("#chat5").hide();
-				}else if(scroll >= 600 && scroll < 900){
-					$("#chat1").hide();
-					$("#chat2").hide();
-					$("#chat3").show();
-					$("#chat4").hide();
-					$("#chat5").hide();
-				}else if(scroll >= 900 && scroll < 1200){
-					$("#chat1").hide();
-					$("#chat2").hide();
-					$("#chat3").hide();
-					$("#chat4").show();
-					$("#chat5").hide();
-				}else if(scroll >= 1200 && scroll < 1500){
-					$("#chat1").hide();
-					$("#chat2").hide();
-					$("#chat3").hide();
-					$("#chat4").hide();
-					$("#chat5").show();
-				}
-			  }else if(scroll >= 1550){
-			  	$("#tobeFix").removeClass("tobeFix");
-			  	$("#section2").addClass("section2AfterFixed");
-			  	$("#section2").removeClass("section2");
-			  	$("#moonSurface").removeClass("moonSurface");
-			  	$("#moonSurface").addClass("moonSurface2");
-			  	$("#bg1").attr("data-scroll-speed",8);
-			  	$("#moonSurface").attr("data-scroll-speed",9.9);
-			  	$("#moonSurface2").attr("data-scroll-speed",2);
-			  	$("#moonBlur").attr("data-scroll-speed",1.5);
-			  	$("#moonBlur2").attr("data-scroll-speed",1.5);
-			  	$("#bgDiv").attr("data-scroll-speed",1.5);
-
-				$(".zoom1 img").css({
-					transform: 'translate3d(10%, -'+((scroll-1550)/100)+'%, 0) scale('+(100 + (scroll-1550)/10)/100+')',
-					marginLeft: ((scroll-1550)/2)
-				});
-			  }
-
-        $("#count").text(scroll);
-			});
+		$("#inputValue").text(name);
+		//$("#container").height('900em');
+	}
 </script>
+
 
 
 <!-- script for smooth scrolling -->
@@ -209,7 +132,7 @@
 		}
 
 		function handle(delta) {
-		    var time = 1000;
+		    var time = 500;
 			var distance = 200;
 		    
 		    $('html, body').stop().animate({
@@ -241,7 +164,7 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/js/mdb.min.js"></script>
 
-<script src="assets/js/paralaxing.js"></script>
+<script src="assets/js/paralaxingAndAnimations.js"></script>
 
 </body>
 </html>
