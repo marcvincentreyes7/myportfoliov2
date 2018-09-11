@@ -101,18 +101,18 @@
       }
 
       if(scroll >= 3600){
-        //$("#empty").height(300);
-          // var bwidth = $("body").width();
-          // if(bwidth == 768){
-          //   $(function(){
-          //     $("#empty").height(500);
-          //   });
-          // }
+        // $("#empty").height(4500);
+          
         $("#marsColony").stop().fadeIn();
       }else{
         $("#marsColony").stop().fadeOut();
       }
 
+      if (scroll >= 4000) {
+        $("#astronautMe").show();
+      }else{
+        $("#astronautMe").hide();
+      }
 
       // mars conversation
       if(scroll >= 4780){

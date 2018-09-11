@@ -6,10 +6,19 @@
 
 body{
     background-color: hsl(300, 100%, 5%);
-    height: 14631px;
 }
+
+#empty{
+    height: 5500px;
+}
+#empty2{
+    height: 5500px;
+    display: none;
+}
+
 .navbar{
     background-color: darkblue!important;
+    z-index: 999999999;
 }
 
 .hiThere{
@@ -62,19 +71,6 @@ body{
 }
 
 
-/*.section2AfterFixed{
-    position: absolute;
-    height: 170vh;
-    overflow: hidden;
-    top: 200vh;
-}*/
-
-/*#section3{
-    height: 100vh;
-    width: 100vw;
-}
-*/
-
 .moonSurface{
     position: absolute;
     padding-top: 30vh;
@@ -83,16 +79,6 @@ body{
     width: 100%;
     z-index: 5;
 }
-
-/*.moonSurfaceAfter{
-    position: absolute;
-    padding-top: 30vh;
-    top: 95vh;
-    height: 100vh;
-    width: 100%;
-    z-index: 5;
-}*/
-
 
 
 #moonSurface2{
@@ -147,24 +133,6 @@ body{
     z-index: -2000;
 }
 
-/*#empty{
-    height: 900em;
-}
-*/
-
-/*#toBeTop{
-    position: fixed;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    height: 100vh;
-    width: 100vw;
-    z-index: 999999;
-    background-color: rgba(83,50, 34, 0.5);
-}*/
-/*html{
-    height: 900vh;
-}*/
 
 #astronaut{
     position: absolute;
@@ -226,9 +194,55 @@ body{
     z-index: 99999;
 }
 
+/*martin, marcus, marlon: the martians*/
+
+#martian1{
+    position: fixed;
+    bottom: 0vh;
+    left: 10vw;
+    height: 50vh;
+    width: 20vw;
+    display: none;
+    z-index: 999991;
+    display: none;
+}
+
+#martian2{
+    position: fixed;
+    bottom: 0vh;
+    left: 30vw;
+    height: 50vh;
+    width: 20vw;
+    display: none;
+    z-index: 99999;
+}
+
+#martian3{
+    position: fixed;
+    bottom: 0vh;
+    left: 50vw;
+    height: 50vh;
+    width: 20vw;
+    display: none;
+    z-index: 999991;
+}
+
+#astronautMe{
+    position: fixed;
+    bottom: 0vh;
+    left: 70vw;
+    height: 60vh;
+    width: 30vw;
+    display: none;
+    z-index: 999991;
+}
+
+
+
 #name{
     position: fixed;
     top: 50vh;
+    left: 0vh;
     display: none;
     z-index: 9999999;
 }
@@ -236,8 +250,33 @@ body{
 #userName{
     position: fixed;
     top: 55vh;
+    left: 0vh;
     display: none;
     z-index: 99999999;
+}
+
+#frame{
+    position: fixed;
+    top: 75px;
+    left: 0vw;
+    border: 2px solid black;
+    padding: 20px;
+    height: 70px;
+    width: 100vw;
+    z-index: 999999;
+    color: black;
+    background-color: white;
+    display: none;
+ }
+
+.martianAvatar{
+    position: fixed;
+    top: 53px;
+    left: 0vw;
+    height: 90px;
+    width: 70px;
+    display: none;
+    z-index: 999999;
 }
 
 
@@ -246,15 +285,50 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile phone*/
 @media only screen and (max-width: 40em) {
 
+    #empty{
+        height: 5500px;
+    }
+    #empty2{
+        height: 5500px;
+        display: none;
+    }
+
     #moonSurface{
-    position: absolute;
-    padding-top: 30vh;
-    top: -10vh;
-    height: 100vh;
-    width: 150%;
-    z-index: 5;
+        position: absolute;
+        padding-top: 30vh;
+        top: -10vh;
+        height: 100vh;
+        width: 150%;
+        z-index: 5;
     }
 
 
@@ -302,10 +376,99 @@ body{
         display: none;
     }
 
+    #martian1{
+        position: fixed;
+        bottom: 0vh;
+        left: 20vw;
+        height: 50vh;
+        width: 40vw;
+        display: none;
+        z-index: 999991;
+        display: none;
+    }
+
+    #martian2{
+        position: fixed;
+        bottom: 0vh;
+        left: 0vw;
+        height: 50vh;
+        width: 40vw;
+        display: none;
+        z-index: 99999;
+        display: none;
+    }
+
+    #martian3{
+        position: fixed;
+        bottom: -2vh;
+        left: 35vw;
+        height: 50vh;
+        width: 40vw;
+        display: none;
+        z-index: 999991;
+        display: none;
+    }
+
+    #astronautMe{
+        position: fixed;
+        bottom: 0vh;
+        left: 55vw;
+        height: 60vh;
+        width: 50vw;
+        display: none;
+        z-index: 999991;
+        display: none;
+    }
+
+    #frame{
+        position: fixed;
+        top: 75px;
+        left: 0vw;
+        border: 2px solid black;
+        padding: 20px;
+        height: 40px;
+        width: 100vw;
+        z-index: 999999;
+        color: black;
+        background-color: white;
+        display: none;
+    }
+
+    .martianAvatar{
+        position: fixed;
+        top: 57px;
+        left: 0vw;
+        height: 60px;
+        width: 50px;
+        display: none;
+        z-index: 999999;
+        display: none;
+    }
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+/*ipad*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+    #empty{
+        height: 6000px;
+    }
+    #empty2{
+        height: 6000px;
+        display: none;
+    }
+
 
     #moonSurface{
     position: absolute;
@@ -341,5 +504,70 @@ body{
         width: 200%;
         z-index: 15;
     }
+
+    #martian1{
+        position: fixed;
+        bottom: 0vh;
+        left: 15vw;
+        height: 50vh;
+        width: 40vw;
+        display: none;
+        z-index: 999991;
+        display: none;
+    }
+
+    #martian2{
+        position: fixed;
+        bottom: 0vh;
+        left: 0vw;
+        height: 50vh;
+        width: 40vw;
+        display: none;
+        z-index: 99999;
+    }
+
+    #martian3{
+        position: fixed;
+        bottom: -2vh;
+        left: 30vw;
+        height: 50vh;
+        width: 40vw;
+        display: none;
+        z-index: 999991;
+    }
+
+    #astronautMe{
+        position: fixed;
+        bottom: 0vh;
+        left: 55vw;
+        height: 60vh;
+        width: 50vw;
+        display: none;
+        z-index: 999991;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*wide screen*/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { 
+    #empty{
+        height: 6000px;
+    }
+    #empty2{
+        height: 6000px;
+        display: none;
+    }
+
 
 }

@@ -93,13 +93,26 @@
 		<img id="chat6" src="assets/images/6.png">
 		<img id="mars" src="assets/images/mars.png">
 		<img id="marsColony" src="assets/images/marsColony.jpg">
+		<img id="martian1" src="assets/images/martian1.png">
+		<img id="martian2" src="assets/images/martian2.png">
+		<img id="martian3" src="assets/images/martian3.png">
+		<img id="astronautMe" src="assets/images/astronautMe.png">
+		<div id="frame">
+			<img class="martianAvatar" id="martian1Avatar" src="assets/images/martian1Avatar.png">
+			<img class="martianAvatar" id="martian2Avatar" src="assets/images/martian2Avatar.png">
+			<img class="martianAvatar" id="martian3Avatar" src="assets/images/martian3Avatar.png">
+			<img class="martianAvatar" id="astronautMeAvatar" src="assets/images/astronautMeAvatar.png">
+		</div>
+
 		<input id="name" type="text" name="name" autocomplete="off">
 		<button id="userName" class="btn btn-primary" type="btn" onclick="userName()">submit</button>
 		<p id="inputValue" style="display: none">hello</p>
 		
 	</div>
+	
 	<div id="bgDiv" ></div> <!-- data-scroll-speed="1.5" -->
 	<div id="empty"></div>
+	<div id="empty2"></div>
 
 </div> <!-- end of container-fluid -->
 
@@ -109,7 +122,9 @@
 		var name = $("#name").val();
 
 		$("#inputValue").text(name);
-		//$("#container").height('900em');
+		$("#empty2").show();
+		$("#name").hide();
+		$("#userName").hide();
 	}
 </script>
 
