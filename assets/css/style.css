@@ -62,12 +62,12 @@ body{
 }
 
 
-.section2AfterFixed{
+/*.section2AfterFixed{
     position: absolute;
     height: 170vh;
     overflow: hidden;
     top: 200vh;
-}
+}*/
 
 /*#section3{
     height: 100vh;
@@ -84,14 +84,14 @@ body{
     z-index: 5;
 }
 
-.moonSurfaceAfter{
+/*.moonSurfaceAfter{
     position: absolute;
     padding-top: 30vh;
     top: 95vh;
     height: 100vh;
     width: 100%;
     z-index: 5;
-}
+}*/
 
 
 
@@ -181,7 +181,7 @@ body{
     left: 25vw;
     height: 25vh;
     width: 18em;
-    z-index: 2000;
+    z-index: 10;
     display: none;
 }
 
@@ -191,7 +191,7 @@ body{
     left: 25vw;
     height: 25vh;
     width: 18em;
-    z-index: 2000;
+    z-index: 12;
     display: none;
 }
 
@@ -211,7 +211,7 @@ body{
     left: 50vw;
     transform: translate(-50%, -50%);
     height: 5vh;
-    z-index: 0;
+    z-index: 15;
     display: none;
 }
 
@@ -223,18 +223,21 @@ body{
     height: 100vh;
     width: 100vw;
     display: none;
+    z-index: 99999;
 }
 
 #name{
     position: fixed;
     top: 50vh;
     display: none;
+    z-index: 9999999;
 }
 
 #userName{
     position: fixed;
     top: 55vh;
     display: none;
+    z-index: 99999999;
 }
 
 

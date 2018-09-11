@@ -2,11 +2,14 @@
       var scroll = ($(window).scrollTop());
       var scroll2 = 0;
 
+      // zooming earth
       if(scroll < 1550){
         $(".zoom1 img").css({
           transform: 'translate3d(10%, -'+(scroll2/100)+'%, 0) scale('+(100 + scroll2/10)/100+')',
           marginLeft: (scroll2/2)
         });
+
+        // chatting in the moon
       if(scroll >= 0 && scroll < 300){
         $("#chat1").show();
         $("#chat2").hide();
@@ -35,14 +38,14 @@
         $("#chat4").show();
         $("#chat5").hide();
         $("#chat6").hide();
-      }else if(scroll >= 1200 && scroll < 1500){
+      }else if(scroll >= 1200 && scroll < 1400){
         $("#chat1").hide();
         $("#chat2").hide();
         $("#chat3").hide();
         $("#chat4").hide();
         $("#chat5").show();
         $("#chat6").hide();
-      }else if(scroll >= 1500 && scroll < 1600){
+      }else if(scroll >= 1400 && scroll < 1550){
         $("#chat1").hide();
         $("#chat2").hide();
         $("#chat3").hide();
@@ -75,8 +78,9 @@
           $(".zoom1").css("visibility", "hidden");
           $(".bg1").css("visibility", "hidden");
           $("#astronaut").hide();
+          $("#chat5").hide();
           $("#chat6").hide();
-        }else if(scroll < 2280){
+        }else if(scroll <= 2280){
 
           $(".zoom1").css("visibility", "visible");
           $(".bg1").css("visibility", "visible");
@@ -129,9 +133,8 @@
       }
 
     $("#count").text(scroll);
-    $("#count2").text($(document).height());
 }); //end of script
 
  $(function(){
   $("#count2").text($(document).height());
-});
+ });
