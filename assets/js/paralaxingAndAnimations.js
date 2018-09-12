@@ -101,7 +101,7 @@
       }
 
       if(scroll >= 3600){
-        // $("#empty").height(4500);
+        // landing in mars
           
         $("#marsColony").stop().fadeIn();
       }else{
@@ -110,31 +110,438 @@
 
       if (scroll >= 4000) {
         $("#astronautMe").show();
+        if (scroll >= 4100) {
+          $("#frame").show();
+          $("#astronautMe").removeClass('dim');
+          $("#martian1").addClass('dim');
+          $("#martian2").addClass('dim');
+          $("#martian3").addClass('dim');
+          $("#astronautMeAvatar").show();
+          $("#martian1Avatar").hide();
+          $("#martian2Avatar").hide();
+          $("#martian3Avatar").hide();
+          $("#martian1").hide();
+          $("#martian2").hide();
+          $("#martian3").hide();
+          $("#frameText").text("We're here!");
+
+          if (scroll >= 4400 && scroll < 4600) {
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").hide();
+            $("#martian2").hide();
+            $("#martian3").hide();
+            $("#frameText").text("Welcome to Mars!");
+          }
+          if (scroll >= 4600 && scroll < 4800) {
+            $("#astronautMe").addClass('dim');
+            $("#martian1").removeClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").show();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").hide();
+            $("#martian3").hide();
+            $("#frameText").text("Hep! hep!");
+          }
+          if (scroll >= 4800 && scroll < 5100) {
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").removeClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").show();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").hide();
+            $("#frameText").text("Hoooraayyy!!");
+          }
+          if (scroll >= 5100 && scroll < 5400) {
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").removeClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").show();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("Ola!");
+          }
+          if (scroll >= 5400 && scroll < 5700) {
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").removeClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").show();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("Hi Marc! Welcome back!");
+          }
+          if (scroll >= 5700 && scroll < 6000) {
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("Hi friends! I miss you all. How's your day?");
+          }
+          if (scroll >= 6000 && scroll < 6300) {
+            $("#astronautMe").addClass('dim');
+            $("#martian1").removeClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").show();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("huh? I've noticed that you have accompanied by someone");
+          }
+          if (scroll >= 6300 && scroll < 6600) {
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("yeah! He/She is my portfolio's visitor");
+            // $("#inputValue").text("hello");
+            // $("#empty2").hide();
+          }
+          if (scroll >= 6600 && scroll < 6700) {
+            $("#frame").hide();
+            $("#frameText").hide();
+            $("#astronautMeAvatar").hide();
+            $("#name").hide();
+            $("#userName").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+          }
+          if (scroll >= 6700 && scroll < 7000) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+
+            var inputValue = $("#inputValue").text();
+
+              if(inputValue == "hello"){
+                $("#frameText").text("by the way, may we know your name? sir/maam ?");
+                $("#name").show();
+                $("#userName").show();
+              }
+
+              else if(inputValue == "Earthling"){
+                $("#frameText").text('').append("you scrolled back? don't you want to be called <span class='valText'>"+inputValue
+                  +"</span>");
+                $("#name").show();
+                $("#userName").show();
+                //alert('hello '+inputValue);
+              }
+              else{
+                $("#frameText").text('').append("want to change your screen name <span class='valText'>"+inputValue
+                  +"</span>");
+                $("#name").show();
+                $("#userName").show();
+              }
+
+
+          }
+          if(scroll >= 7000 && scroll <7300){
+            var inputValue = $("#inputValue").text();
+            if(inputValue == "" || inputValue == "Earthling"){
+                inputValue = "Earthling";
+                $("#inputValue").text("Earthling");
+                $("#name").hide();
+                $("#userName").hide();
+                $("#frame").show();
+                $("#frameText").show();
+                $("#astronautMe").removeClass('dim');
+                $("#martian1").addClass('dim');
+                $("#martian2").addClass('dim');
+                $("#martian3").addClass('dim');
+                $("#astronautMeAvatar").show();
+                $("#martian1Avatar").hide();
+                $("#martian2Avatar").hide();
+                $("#martian3Avatar").hide();
+                $("#martian1").show();
+                $("#martian2").show();
+                $("#martian3").show();
+                $("#frameText").text('').append("Since you didn't give a name, we will call you <span class='valText'>"+inputValue
+                  +"</span>! let me indroduce you my friends");
+              } else if(inputValue != "Earthling") {
+                $("#frame").show();
+                $("#frameText").show();
+                $("#astronautMe").removeClass('dim');
+                $("#martian1").addClass('dim');
+                $("#martian2").addClass('dim');
+                $("#martian3").addClass('dim');
+                $("#astronautMeAvatar").show();
+                $("#martian1Avatar").hide();
+                $("#martian2Avatar").hide();
+                $("#martian3Avatar").hide();
+                $("#martian1").show();
+                $("#martian2").show();
+                $("#martian3").show();
+                $("#frameText").text('').append('Alright! your name is <span class="valText">'+inputValue
+                  +'</span> let me indroduce you my friends');
+                
+              }
+          }
+          if (scroll >= 7300 && scroll < 7600) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").removeClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("His name is ").append('<span class="valText">Marcus</span>');
+          }
+
+          if (scroll >= 7600 && scroll < 7900) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").removeClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("The next one ").append('<span class="valText">Marlon</span>');;
+          }
+
+          if (scroll >= 7900 && scroll < 8100) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").removeClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("The third one is ").append('<span class="valText">Martin</span>');;
+          }
+
+          if (scroll >= 8100 && scroll < 8400) {
+            var inputValue = $("#inputValue").text();
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text(inputValue+' meet "The Martians"');
+            $("#frameText").text("").append('<span class="valText">'+inputValue+'</span> meet <span class="valText">"The Martians"</span>');
+          }
+
+          if (scroll >= 8400 && scroll < 8700) {
+            var inputValue = $("#inputValue").text();
+            if (inputValue == 'hello') {
+              inputValue = 'Earthling';
+              $("#inputValue").text('Earthling');
+            }
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").removeClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").show();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("hey "+inputValue+", nice to meet you");
+            $("#frameText").text("hey ").append('<span class="valText">'+inputValue+'</span>, nice to meet you');
+          }
+
+          if (scroll >= 8700 && scroll < 9000) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").removeClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").show();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("since you've visit Marc's portfolio, we are here to let you know about him");
+          }
+
+          if (scroll >= 9000 && scroll < 9300) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").removeClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").show();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text('His full name is ').append('<span class="valText">Marc Vincent C. Reyes</span>');
+          }
+
+          if (scroll >= 9300 && scroll < 9600) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").removeClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").show();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text('yeah! He finished Computer Engineering course at ').append('<span class="valText">Bulacan State University</span>');
+          }
+
+          if (scroll >= 9600 && scroll < 9900) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").removeClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").show();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("that's right, and in year 2014-2016, he worked at ").append('<span class="valText">Accenture Inc</span> as a <u>Software Engineer</u>');
+          }
+
+          if (scroll >= 9900 && scroll < 10200) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").removeClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").show();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("he then switch to web development by studying at ").append('<span class="valText">Tuitt</span>, a very awesome coding bootcamp. Visit their facebook page here -> <a target="_blank" href="https://www.facebook.com/tuittphilippines/?fb_dtsg_ag=Adz1RCXPKMXVtkWyCX7jjoGMVRqZzUEQ2eHg3b7zVTtqTA%3AAdwv0rFyMHInOilHt-_STIm4cREqXJdaDfOeMYiWlEgghQ"><img src="assets/images/tuitt.png" style="width:35px; height:40px"></img></a>');
+          }
+
+          if (scroll >= 10200 && scroll < 10500) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").removeClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").show();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("You can click these black holes to view more details about ").append('<span class="valText">Marc</span>');
+            $("#orb1").show();
+          }
+
+
+        }
       }else{
         $("#astronautMe").hide();
+        $("#astronautMeAvatar").hide();
+        $("#frame").hide();
       }
 
       // mars conversation
-      if(scroll >= 4780){
-        var inputValue = $("#inputValue").text();
-        if(inputValue == 'hello'){
-          $("#name").show();
-          $("#userName").show();
-        }else if(inputValue == ''){
-          alert('hello earthling');
-        }else{
-          $("#name").hide();
-          $("#userName").hide();
-        }
-        
-      }else{
-        $("#name").hide();
-        $("#userName").hide();
-      }
+
 
     $("#count").text(scroll);
 }); //end of script
 
  $(function(){
+  console.log($("#inputValue").text());
   $("#count2").text($(document).height());
  });

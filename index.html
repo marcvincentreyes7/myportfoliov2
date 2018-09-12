@@ -47,7 +47,7 @@
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Opinions</a>
+                    <a class="nav-link" href="#about" onclick="unlockScroll()">About</a>
                 </li>
             </ul>
             <ul class="navbar-nav nav-flex-icons">
@@ -93,19 +93,22 @@
 		<img id="chat6" src="assets/images/6.png">
 		<img id="mars" src="assets/images/mars.png">
 		<img id="marsColony" src="assets/images/marsColony.jpg">
-		<img id="martian1" src="assets/images/martian1.png">
-		<img id="martian2" src="assets/images/martian2.png">
-		<img id="martian3" src="assets/images/martian3.png">
-		<img id="astronautMe" src="assets/images/astronautMe.png">
-		<div id="frame">
-			<img class="martianAvatar" id="martian1Avatar" src="assets/images/martian1Avatar.png">
-			<img class="martianAvatar" id="martian2Avatar" src="assets/images/martian2Avatar.png">
-			<img class="martianAvatar" id="martian3Avatar" src="assets/images/martian3Avatar.png">
-			<img class="martianAvatar" id="astronautMeAvatar" src="assets/images/astronautMeAvatar.png">
+		<img id="martian1" class="dim" src="assets/images/martian1.png">
+		<img id="martian2" class="dim" src="assets/images/martian2.png">
+		<img id="martian3" class="dim" src="assets/images/martian3.png">
+		<img id="astronautMe" class="dim" src="assets/images/astronautMe.png">
+		<div id="frame" style="display: none">
+			<div id="frameText"></div>
 		</div>
+		<img class="martianAvatar" id="martian1Avatar" src="assets/images/martian1Avatar.png">
+		<img class="martianAvatar" id="martian2Avatar" src="assets/images/martian2Avatar.png">
+		<img class="martianAvatar" id="martian3Avatar" src="assets/images/martian3Avatar.png">
+		<img class="martianAvatar" id="astronautMeAvatar" src="assets/images/astronautMeAvatar.png">
+		<img id="orb1" class="orb" onclick="window.open('https://drive.google.com/open?id=1CEwkIsQvvKrBIYEPm4lJOxmT43GpMlPV','_blank');" src="assets/images/orb1.gif">
 
+		
 		<input id="name" type="text" name="name" autocomplete="off">
-		<button id="userName" class="btn btn-primary" type="btn" onclick="userName()">submit</button>
+		<a id="userName" class="btn btn-primary" type="btn" href="#hiName" onclick="userName()">Submit</a>
 		<p id="inputValue" style="display: none">hello</p>
 		
 	</div>
@@ -113,6 +116,8 @@
 	<div id="bgDiv" ></div> <!-- data-scroll-speed="1.5" -->
 	<div id="empty"></div>
 	<div id="empty2"></div>
+	<div id="hiName"></div>
+	<div id="about"></div>
 
 </div> <!-- end of container-fluid -->
 
@@ -120,8 +125,16 @@
 <script type="text/javascript">
 	function userName(){
 		var name = $("#name").val();
-
+		name = name.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+                    return letter.toUpperCase();
+                });
 		$("#inputValue").text(name);
+		$("#empty2").show();
+		$("#name").hide();
+		$("#userName").hide();
+	}
+
+	function unlockScroll(){
 		$("#empty2").show();
 		$("#name").hide();
 		$("#userName").hide();
