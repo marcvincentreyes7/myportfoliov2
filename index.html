@@ -105,6 +105,11 @@
 		<img class="martianAvatar" id="martian3Avatar" src="assets/images/martian3Avatar.png">
 		<img class="martianAvatar" id="astronautMeAvatar" src="assets/images/astronautMeAvatar.png">
 		<img id="orb1" class="orb" onclick="window.open('https://drive.google.com/open?id=1CEwkIsQvvKrBIYEPm4lJOxmT43GpMlPV','_blank');" src="assets/images/orb1.gif">
+		<img id="orb2" class="orb" onclick="launchModalProject()" src="assets/images/orb3.gif">
+		<img id="orb3" class="orb" onclick="launchModalSkills()" src="assets/images/rasengan.gif">
+		<p class="orbLabel" id="resume" onclick="window.open('https://drive.google.com/open?id=1CEwkIsQvvKrBIYEPm4lJOxmT43GpMlPV','_blank');">resume</p>
+		<p class="orbLabel" id="projects" onclick="launchModalProject()">projects</p>
+		<p class="orbLabel" id="skills" onclick="launchModalSkills()">skills</p>
 
 		
 		<input id="name" type="text" name="name" autocomplete="off">
@@ -118,6 +123,53 @@
 	<div id="empty2"></div>
 	<div id="hiName"></div>
 	<div id="about"></div>
+
+	<!-- Central Modal Large -->
+	<div class="modal fade" id="projectsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+	    <!-- Change class .modal-sm to change the size of the modal -->
+	    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h4 class="modal-title w-100" id="myModalLabel">Projects</h4>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          ...
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <!-- Central Modal Large -->
+
+
+<!-- Central Modal Large -->
+	<div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+	    <!-- Change class .modal-sm to change the size of the modal -->
+	    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h4 class="modal-title w-100" id="myModalLabel">Skills</h4>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          ...
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <!-- Central Modal Large -->
 
 </div> <!-- end of container-fluid -->
 
@@ -138,6 +190,14 @@
 		$("#empty2").show();
 		$("#name").hide();
 		$("#userName").hide();
+	}
+
+	function launchModalProject(){
+		$("#projectsModal").modal('show');
+	}
+
+	function launchModalSkills(){
+		$("#skillsModal").modal('show');
 	}
 </script>
 
@@ -169,7 +229,6 @@
 		}
 	});
 </script>
-
 
 
 

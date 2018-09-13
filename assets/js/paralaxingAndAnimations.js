@@ -507,6 +507,8 @@
             $("#martian2").show();
             $("#martian3").show();
             $("#frameText").text("he then switch to web development by studying at ").append('<span class="valText">Tuitt</span>, a very awesome coding bootcamp. Visit their facebook page here -> <a target="_blank" href="https://www.facebook.com/tuittphilippines/?fb_dtsg_ag=Adz1RCXPKMXVtkWyCX7jjoGMVRqZzUEQ2eHg3b7zVTtqTA%3AAdwv0rFyMHInOilHt-_STIm4cREqXJdaDfOeMYiWlEgghQ"><img src="assets/images/tuitt.png" style="width:35px; height:40px"></img></a>');
+            $("#orb1").hide();
+            $("#resume").hide();
           }
 
           if (scroll >= 10200 && scroll < 10500) {
@@ -523,8 +525,59 @@
             $("#martian1").show();
             $("#martian2").show();
             $("#martian3").show();
-            $("#frameText").text("You can click these black holes to view more details about ").append('<span class="valText">Marc</span>');
+            $("#frameText").text("You can click this black hole to view Marc's ").append("<span class='valText'>cv/Resume</span>");
             $("#orb1").show();
+            $("#resume").show();
+            $("#orb2").hide();
+            $("#projects").hide();
+            $("#orb3").hide();
+            $("#skills").hide();
+          }
+
+          if (scroll >= 10500 && scroll < 10800) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").removeClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").show();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("or click this orb for his ").append("<span class='valTextLink' onclick='launchProjects()'>sample projects</span>");
+            $("#orb1").show();
+            $("#resume").show();
+            $("#orb2").show();
+            $("#projects").show();
+            $("#orb3").hide();
+            $("#skills").hide();
+          }
+
+          if (scroll >= 10800 && scroll < 11100) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").addClass('dim');
+            $("#martian1").removeClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").hide();
+            $("#martian1Avatar").show();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("also check this orb for Marc's ").append("<span class='valTextLink' onclick='launchModalSkills()'>skills</span>");
+            $("#orb1").show();
+            $("#resume").show();
+            $("#orb2").show();
+            $("#projects").show();
+            $("#orb3").show();
+            $("#skills").show();
           }
 
 

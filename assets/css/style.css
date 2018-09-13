@@ -304,6 +304,12 @@ body{
     font-weight: bold;
 }
 
+.valTextLink{
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #hiName{
     position: absolute;
     top: 7050px;
@@ -311,7 +317,7 @@ body{
 
 #about{
     position: absolute;
-    top: 8700px;
+    top: 10900px;
 }
 
 
@@ -333,6 +339,64 @@ body{
     bottom: 30vh;
     display: none;
 }
+
+
+.orbLabel{
+    color: white;
+    /*background-color: white;*/
+    text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+    font-family: "comics";
+    font-size: 15px;
+    display: block;
+    z-index: 999999999;
+}
+
+#resume{
+    position: fixed;
+    left: 51vw;
+    bottom: 32vh;
+    cursor: pointer;
+    display: none;
+}
+
+#orb2{
+    left: 30vw;
+    bottom: 45vh;
+    display: none;
+}
+
+#projects{
+    position: fixed;
+    left: 30.5vw;
+    bottom: 47vh;
+    cursor: pointer;
+    display: none;
+}
+
+#orb3{
+    left: 17.3vw;
+    bottom: 20vh;
+    display: none;
+}
+
+
+#skills{
+    position: fixed;
+    left: 19vw;
+    bottom: 22vh;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -498,8 +562,54 @@ body{
     }
 
     #orb1{
-        left: 54vw;
-        bottom: 54vh;
+        left: 3vw;
+        bottom: 1vh;
+        display: none;
+    }
+
+
+    .orbLabel{
+        color: white;
+        /*background-color: white;*/
+        text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+        font-family: "comics";
+        font-size: 15px;
+        display: block;
+        z-index: 999999999;
+    }
+
+    #resume{
+        position: fixed;
+        left: 4vw;
+        bottom: 1.5vh;
+        display: none;
+    }
+
+    #orb2{
+        left: 30vw;
+        bottom: 1vh;
+        display: none;
+    }
+
+    #projects{
+        position: fixed;
+        left: 29.5vw;
+        bottom: 1.5vh;
+        display: none;
+    }
+
+    #orb3{
+        left: 56.3vw;
+        bottom: 1vh;
+        display: none;
+    }
+
+
+    #skills{
+        position: fixed;
+        left: 60.3vw;
+        bottom: 1.5vh;
+        cursor: pointer;
         display: none;
     }
 
@@ -510,7 +620,18 @@ body{
 
 
 
-/*mobile phone*/
+
+
+
+
+
+
+
+
+
+
+
+/*mobile phone and iphone*/
 @media only screen and (max-width: 21em){
 
     #empty{
@@ -663,8 +784,53 @@ body{
     }
 
     #orb1{
-        left: 54vw;
-        bottom: 54vh;
+        left: 4vw;
+        bottom: 1vh;
+        display: none;
+    }
+
+    .orbLabel{
+        color: white;
+        /*background-color: white;*/
+        text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+        font-family: "comics";
+        font-size: 15px;
+        display: block;
+        z-index: 999999999;
+    }
+
+    #resume{
+        position: fixed;
+        left: 5.5vw;
+        bottom: 2vh;
+        display: none;
+    }
+
+    #orb2{
+        left: 30vw;
+        bottom: 1vh;
+        display: none;
+    }
+
+    #projects{
+        position: fixed;
+        left: 29vw;
+        bottom: 2vh;
+        display: none;
+    }
+
+    #orb3{
+        left: 56vw;
+        bottom: 1vh;
+        display: none;
+    }
+
+
+    #skills{
+        position: fixed;
+        left: 60.3vw;
+        bottom: 2vh;
+        cursor: pointer;
         display: none;
     }
 
@@ -765,6 +931,57 @@ body{
         z-index: 999991;
     }
 
+    #orb1{
+        left: 1vw;
+        bottom: 54vh;
+        display: none;
+    }
+
+    .orbLabel{
+        color: white;
+        /*background-color: white;*/
+        text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+        font-family: "comics";
+        font-size: 15px;
+        display: block;
+        z-index: 999999999;
+    }
+
+    #resume{
+        position: fixed;
+        left: 3vw;
+        bottom: 55.5vh;
+        display: none
+    }
+
+    #orb2{
+        left: 22vw;
+        bottom: 54vh;
+        display: none;
+    }
+
+    #projects{
+        position: fixed;
+        left: 23.5vw;
+        bottom: 55.5vh;
+        display: none;
+    }
+
+    #orb3{
+        left: 42.3vw;
+        bottom: 54vh;
+        display: none;
+    }
+
+
+    #skills{
+        position: fixed;
+        left: 45.5vw;
+        bottom: 55.5vh;
+        cursor: pointer;
+        display: none;
+    }
+
 }
 
 
@@ -788,5 +1005,55 @@ body{
         display: none;
     }
 
+    #orb1{
+        left: 50vw;
+        bottom: 30vh;
+        display: none;
+    }
+
+    .orbLabel{
+        color: white;
+        /*background-color: white;*/
+        text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+        font-family: "comics";
+        font-size: 15px;
+        display: block;
+        z-index: 999999999;
+    }
+
+    #resume{
+        position: fixed;
+        left: 50.7vw;
+        bottom: 31.5vh;
+        display: none
+    }
+
+    #orb2{
+        left: 30vw;
+        bottom: 45vh;
+        display: none;
+    }
+
+    #projects{
+        position: fixed;
+        left: 30.5vw;
+        bottom: 46.5vh;
+        display: none;
+    }
+
+    #orb3{
+        left: 17.8vw;
+        bottom: 20vh;
+        display: none;
+    }
+
+
+    #skills{
+        position: fixed;
+        left: 19vw;
+        bottom: 21vh;
+        cursor: pointer;
+        display: none;
+    }
 
 }
