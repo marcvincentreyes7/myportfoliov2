@@ -223,7 +223,7 @@
             $("#martian3").show();
             $("#frameText").text("huh? I've noticed that you have accompanied by someone");
           }
-          if (scroll >= 6300 && scroll < 6600) {
+          if (scroll >= 6300 && scroll < 6500) {
             $("#astronautMe").removeClass('dim');
             $("#martian1").addClass('dim');
             $("#martian2").addClass('dim');
@@ -241,7 +241,7 @@
             // $("#inputValue").text("hello");
             // $("#empty2").hide();
           }
-          if (scroll >= 6600 && scroll < 6700) {
+          if (scroll >= 6500 && scroll < 6600) {
             $("#frame").hide();
             $("#frameText").hide();
             $("#astronautMeAvatar").hide();
@@ -251,7 +251,7 @@
             $("#martian2").show();
             $("#martian3").show();
           }
-          if (scroll >= 6700 && scroll < 7000) {
+          if (scroll >= 6600 && scroll < 7000) {
             $("#frame").show();
             $("#frameText").show();
             $("#astronautMe").removeClass('dim');
