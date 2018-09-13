@@ -15,6 +15,7 @@
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 
 	<!-- jquery cdn -->
 	<script
@@ -23,9 +24,17 @@
 	  crossorigin="anonymous">
 	</script>
 
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+	<script type='text/javascript' src='assets/js/loadImg.js'></script>
+	<script type='text/javascript'>
+	    $(function(){
+	        $('img').imgPreload()
+	    })
+	</script>
 
 </head>
 <body>
+<div class="se-pre-con"></div>
 <div class="container-fluid" id="container">
 <!--Main Navigation-->
 <header>
@@ -67,8 +76,8 @@
 </header>
 <!--Main Navigation-->
 
-	<h1 style="position: fixed; top: 40vh; z-index: 9999999999; color: white; font-weight: bold; display: none;">scrollCount: <span id="count"></span></h1>
-	<h1 style="position: fixed; top: 30vh; z-index: 9999999999; color: white; font-weight: bold; display: none;">height: <span id="count2"></span></h1>
+	<h1 style="position: fixed; top: 40vh; z-index: 9999999999; color: white; font-weight: bold;">scrollCount: <span id="count"></span></h1>
+	<h1 style="position: fixed; top: 30vh; z-index: 9999999999; color: white; font-weight: bold;">height: <span id="count2"></span></h1>
 
 	<div id="tobeFix" class="tobeFix">
 		<div id="bg1"> <!-- data-scroll-speed="8" -->
