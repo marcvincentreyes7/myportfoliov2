@@ -354,13 +354,11 @@ body{
 
 
 
-
-
 /*mobile phone*/
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 600px) {
 
     #empty{
-        height: 7250px;
+        height: 7400px;
     }
     #empty2{
         height: 5500px;
