@@ -26,6 +26,9 @@
 
 </head>
 <body>
+<!-- <div id="loading">
+  <img id="loading-image" src="assets/images/ajax-loader.gif" alt="Loading..." />
+</div> -->
 <div class="container-fluid" id="container">
 <!--Main Navigation-->
 <header>
@@ -67,8 +70,8 @@
 </header>
 <!--Main Navigation-->
 
-	<h1 style="position: fixed; top: 40vh; z-index: 9999999999; color: white; font-weight: bold; display: none">scrollCount: <span id="count"></span></h1>
-	<h1 style="position: fixed; top: 30vh; z-index: 9999999999; color: white; font-weight: bold; display: none">height: <span id="count2"></span></h1>
+	<h1 style="position: fixed; top: 40vh; z-index: 9999999999; color: white; font-weight: bold;">scrollCount: <span id="count"></span></h1>
+	<h1 style="position: fixed; top: 30vh; z-index: 9999999999; color: white; font-weight: bold;">height: <span id="count2"></span></h1>
 
 	<div id="tobeFix" class="tobeFix">
 		<div id="bg1"> <!-- data-scroll-speed="8" -->
@@ -137,7 +140,20 @@
 	          </button>
 	        </div>
 	        <div class="modal-body">
-	          ...
+	          <div class="row">
+	          	<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+	          		<img class="projectsPic" src="assets/images/outOfThisWorld.gif">
+	          	</div>
+	          	<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+	          		<img class="projectsPic" src="assets/images/survivalDoor.gif">
+	          	</div>
+	          	<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+	          		<img class="projectsPic" src="assets/images/meavarr.gif">
+	          	</div>
+	          	<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+	          		<img class="projectsPic" src="assets/images/gustomovieto.gif">
+	          	</div>
+	          </div>
 	        </div>
 	        <div class="modal-footer">
 	          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
@@ -253,5 +269,24 @@
 
 <script src="assets/js/paralaxingAndAnimations.js"></script>
 
+
+<!-- <script language="javascript" type="text/javascript">
+     $(window).load(function() {
+     $('#loading').hide();
+  });
+</script> -->
+
+<script type="text/javascript">
+	$('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+	$(window).on('load', function(){
+	  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+	});
+	function removeLoader(){
+	    $( "#loadingDiv" ).fadeOut(500, function() {
+	      // fadeOut complete. Remove the loading div
+	      $( "#loadingDiv" ).remove(); //makes page more lightweight 
+	  });  
+	}
+</script>
 </body>
 </html>
