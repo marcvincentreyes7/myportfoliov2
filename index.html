@@ -26,9 +26,11 @@
 
 </head>
 <body>
-<!-- <div id="loading">
-  <img id="loading-image" src="assets/images/ajax-loader.gif" alt="Loading..." />
-</div> -->
+	<div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+     </div>
+
 <div class="container-fluid" id="container">
 <!--Main Navigation-->
 <header>
@@ -70,8 +72,8 @@
 </header>
 <!--Main Navigation-->
 
-	<h1 style="position: fixed; top: 40vh; z-index: 9999999999; color: white; font-weight: bold;display: none">scrollCount: <span id="count"></span></h1>
-	<h1 style="position: fixed; top: 30vh; z-index: 9999999999; color: white; font-weight: bold;display: none">height: <span id="count2"></span></h1>
+	<h1 style="position: fixed; top: 40vh; z-index: 9999999999; color: white; font-weight: bold; display: none">scrollCount: <span id="count"></span></h1>
+	<h1 style="position: fixed; top: 30vh; z-index: 9999999999; color: white; font-weight: bold; display: none">height: <span id="count2"></span></h1>
 
 	<div id="tobeFix" class="tobeFix">
 		<div id="bg1"> <!-- data-scroll-speed="8" -->
@@ -270,13 +272,8 @@
 <script src="assets/js/paralaxingAndAnimations.js"></script>
 
 
-<!-- <script language="javascript" type="text/javascript">
-     $(window).load(function() {
-     $('#loading').hide();
-  });
-</script> -->
-
-<script type="text/javascript">
+<!-- loading.. working -->
+<!-- <script type="text/javascript">
 	$('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
 	$(window).on('load', function(){
 	  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
@@ -287,6 +284,58 @@
 	      $( "#loadingDiv" ).remove(); //makes page more lightweight 
 	  });  
 	}
+</script> -->
+
+
+
+
+
+
+
+
+
+
+<!-- loader2 -->
+<script type="text/javascript">
+	;(function(){
+  function id(v){return document.getElementById(v); }
+  function loadbar() {
+    var ovrl = id("overlay"),
+        prog = id("progress"),
+        stat = id("progstat"),
+        img = document.images,
+        c = 0;
+        tot = img.length;
+
+    function imgLoaded(){
+      c += 1;
+      var perc = ((100/tot*c) << 0) +"%";
+      prog.style.width = perc;
+      stat.innerHTML = "Loading "+ perc;
+      if(c===tot) return doneLoading();
+    }
+    function doneLoading(){
+      $("#empty").show();
+      ovrl.style.opacity = 0;
+      setTimeout(function(){ 
+        ovrl.style.display = "none";
+      }, 1200);
+    }
+    for(var i=0; i<tot; i++) {
+      var tImg     = new Image();
+      tImg.onload  = imgLoaded;
+      tImg.onerror = imgLoaded;
+      tImg.src     = img[i].src;
+    }    
+  }
+  document.addEventListener('DOMContentLoaded', loadbar, false);
+}());
 </script>
+
+
+
+
+
+
 </body>
 </html>
