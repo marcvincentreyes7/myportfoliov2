@@ -504,7 +504,14 @@ body{
     display: inline-block;
 }
 
+.marginTop1em{
+    margin-top: 1em;
+    cursor: pointer;
+}
 
+.card{
+    min-height: 100%;
+}
 
 
 

@@ -597,7 +597,7 @@
             $("#martian1").show();
             $("#martian2").show();
             $("#martian3").show();
-            $("#frameText").text("You can click this black hole to view Marc's ").append("<span class='valText'>cv/Resume</span>");
+            $("#frameText").text("You can click this orb to view Marc's ").append("<span class='valText'>cv/Resume</span>");
             $("#orb1").show();
             $("#resume").show();
             $("#orb2").hide();
