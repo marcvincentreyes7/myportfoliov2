@@ -652,6 +652,52 @@
             $("#skills").show();
           }
 
+          if (scroll >= 11100 && scroll < 11400) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("Thank you friends for all these info");
+            $("#orb1").show();
+            $("#resume").show();
+            $("#orb2").show();
+            $("#projects").show();
+            $("#orb3").show();
+            $("#skills").show();
+          }
+
+          if (scroll >= 11400 && scroll < 11700) {
+            $("#frame").show();
+            $("#frameText").show();
+            $("#astronautMe").removeClass('dim');
+            $("#martian1").addClass('dim');
+            $("#martian2").addClass('dim');
+            $("#martian3").addClass('dim');
+            $("#astronautMeAvatar").show();
+            $("#martian1Avatar").hide();
+            $("#martian2Avatar").hide();
+            $("#martian3Avatar").hide();
+            $("#martian1").show();
+            $("#martian2").show();
+            $("#martian3").show();
+            $("#frameText").text("Alright, you can always jump in this area to view my information. Just click the ").append("<span class='valText'>About</span> link in our nav bar");
+            $("#orb1").show();
+            $("#resume").show();
+            $("#orb2").show();
+            $("#projects").show();
+            $("#orb3").show();
+            $("#skills").show();
+          }
+
 
         }
       }else{

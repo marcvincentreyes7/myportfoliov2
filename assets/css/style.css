@@ -427,7 +427,7 @@ body{
 
 #about{
     position: absolute;
-    top: 10900px;
+    top: 11500px;
 }
 
 
@@ -506,16 +506,39 @@ body{
 
 .marginTop1em{
     margin-top: 1em;
-    cursor: pointer;
 }
 
 .card{
     min-height: 100%;
 }
 
+.card > img{
+    cursor: pointer;
+}
+
+.card-body{
+    height: 200px;
+    overflow-y: scroll;
+}
 
 
+.skillsContainer{
+    text-align: right;
+}
 
+.skillsContainer > img{
+    height: 55px;
+    width: 50px;
+}
+
+.progress{
+    margin-top: 25px;
+}
+
+.progress-bar{
+    font-weight: bold;
+    text-align: center!important;
+}
 
 
 
@@ -731,6 +754,10 @@ body{
         bottom: 1.5vh;
         cursor: pointer;
         display: none;
+    }
+
+    .skillsContainer{
+        text-align: left;
     }
 
 }
@@ -952,6 +979,10 @@ body{
         bottom: 2vh;
         cursor: pointer;
         display: none;
+    }
+
+    .skillsContainer{
+        text-align: left;
     }
 
 }
