@@ -8,6 +8,10 @@ body{
     background-color: hsl(300, 100%, 5%);
 }
 
+#container{
+    display: none;
+}
+
 
 /*loading aninmation -- working*/
 /*.loader,
@@ -68,9 +72,9 @@ body{
 /*loader2*/
 *{margin:0;}
 
-body{
+/*body{
   font: 200 16px/1 Helvetica, Arial, sans-serif;
-}
+}*/
 
 /*img{width:32.2%;}*/
 
@@ -115,7 +119,7 @@ body{
 
 #empty{
     height: 7400px;
-    display: none;
+    /*display: none;*/
 }
 #empty2{
     height: 5500px;
