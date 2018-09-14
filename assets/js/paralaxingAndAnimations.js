@@ -17,6 +17,18 @@
         $("#chat4").hide();
         $("#chat5").hide();
         $("#chat6").hide();
+        $("#moonSurface").css({
+          top: (-10)+'vh'
+        });
+        $("#moonSurface2").css({
+          top: (1)+'vh'
+        });
+        $("#moonBlur").css({
+          top: (-45)+'vh'
+        });
+        $("#moonBlur2").css({
+          top: (-120)+'vh'
+        });
       }else if(scroll >= 300 && scroll < 600){
         $("#chat1").hide();
         $("#chat2").show();
@@ -24,6 +36,18 @@
         $("#chat4").hide();
         $("#chat5").hide();
         $("#chat6").hide();
+        $("#moonSurface").css({
+          top: (-10)+'vh'
+        });
+        $("#moonSurface2").css({
+          top: (1)+'vh'
+        });
+        $("#moonBlur").css({
+          top: (-45)+'vh'
+        });
+        $("#moonBlur2").css({
+          top: (-120)+'vh'
+        });
       }else if(scroll >= 600 && scroll < 900){
         $("#chat1").hide();
         $("#chat2").hide();
@@ -31,6 +55,18 @@
         $("#chat4").hide();
         $("#chat5").hide();
         $("#chat6").hide();
+        $("#moonSurface").css({
+          top: (-10)+'vh'
+        });
+        $("#moonSurface2").css({
+          top: (1)+'vh'
+        });
+        $("#moonBlur").css({
+          top: (-45)+'vh'
+        });
+        $("#moonBlur2").css({
+          top: (-120)+'vh'
+        });
       }else if(scroll >= 900 && scroll < 1200){
         $("#chat1").hide();
         $("#chat2").hide();
@@ -38,6 +74,18 @@
         $("#chat4").show();
         $("#chat5").hide();
         $("#chat6").hide();
+        $("#moonSurface").css({
+          top: (-10)+'vh'
+        });
+        $("#moonSurface2").css({
+          top: (1)+'vh'
+        });
+        $("#moonBlur").css({
+          top: (-45)+'vh'
+        });
+        $("#moonBlur2").css({
+          top: (-120)+'vh'
+        });
       }else if(scroll >= 1200 && scroll < 1400){
         $("#chat1").hide();
         $("#chat2").hide();
@@ -45,6 +93,18 @@
         $("#chat4").hide();
         $("#chat5").show();
         $("#chat6").hide();
+        $("#moonSurface").css({
+          top: (-10)+'vh'
+        });
+        $("#moonSurface2").css({
+          top: (1)+'vh'
+        });
+        $("#moonBlur").css({
+          top: (-45)+'vh'
+        });
+        $("#moonBlur2").css({
+          top: (-120)+'vh'
+        });
       }else if(scroll >= 1400 && scroll < 1550){
         $("#chat1").hide();
         $("#chat2").hide();
@@ -52,6 +112,18 @@
         $("#chat4").hide();
         $("#chat5").hide();
         $("#chat6").show();
+        $("#moonSurface").css({
+          top: (-10)+'vh'
+        });
+        $("#moonSurface2").css({
+          top: (1)+'vh'
+        });
+        $("#moonBlur").css({
+          top: (-45)+'vh'
+        });
+        $("#moonBlur2").css({
+          top: (-120)+'vh'
+        });
       }
 
       }else if(scroll >= 1550){
