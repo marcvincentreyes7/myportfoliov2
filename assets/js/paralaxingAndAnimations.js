@@ -11,12 +11,34 @@
 
         // chatting in the moon
       if(scroll >= 0 && scroll < 300){
+        $("#liHome").addClass("active");
+        $("#liAbout").removeClass("active");
         $("#chat1").show();
         $("#chat2").hide();
         $("#chat3").hide();
         $("#chat4").hide();
         $("#chat5").hide();
         $("#chat6").hide();
+        $("#astronaut").show();
+        $(".zoom1").css("visibility", "visible");
+        $(".bg1").css("visibility", "visible");
+        $("#astronautMe").hide();
+        $("#martian1").hide();
+        $("#martian2").hide();
+        $("#martian3").hide();
+        $("#astronautMeAvatar").hide();
+        $("#martian1Avatar").hide();
+        $("#martian2Avatar").hide();
+        $("#martian3Avatar").hide();
+        $("#frame").hide();
+        $("#name").hide();
+        $("#userName").hide();
+        $("#orb1").hide();
+        $("#orb2").hide();
+        $("#orb3").hide();
+        $("#resume").hide();
+        $("#projects").hide();
+        $("#skills").hide();
         $("#moonSurface").css({
           top: (-10)+'vh'
         });
@@ -36,6 +58,26 @@
         $("#chat4").hide();
         $("#chat5").hide();
         $("#chat6").hide();
+        $("#astronaut").show();
+        $(".zoom1").css("visibility", "visible");
+        $(".bg1").css("visibility", "visible");
+        $("#astronautMe").hide();
+        $("#martian1").hide();
+        $("#martian2").hide();
+        $("#martian3").hide();
+        $("#astronautMeAvatar").hide();
+        $("#martian1Avatar").hide();
+        $("#martian2Avatar").hide();
+        $("#martian3Avatar").hide();
+        $("#frame").hide();
+        $("#name").hide();
+        $("#userName").hide();
+        $("#orb1").hide();
+        $("#orb2").hide();
+        $("#orb3").hide();
+        $("#resume").hide();
+        $("#projects").hide();
+        $("#skills").hide();
         $("#moonSurface").css({
           top: (-10)+'vh'
         });
@@ -55,6 +97,26 @@
         $("#chat4").hide();
         $("#chat5").hide();
         $("#chat6").hide();
+        $("#astronaut").show();
+        $(".zoom1").css("visibility", "visible");
+        $(".bg1").css("visibility", "visible");
+        $("#astronautMe").hide();
+        $("#martian1").hide();
+        $("#martian2").hide();
+        $("#martian3").hide();
+        $("#astronautMeAvatar").hide();
+        $("#martian1Avatar").hide();
+        $("#martian2Avatar").hide();
+        $("#martian3Avatar").hide();
+        $("#frame").hide();
+        $("#name").hide();
+        $("#userName").hide();
+        $("#orb1").hide();
+        $("#orb2").hide();
+        $("#orb3").hide();
+        $("#resume").hide();
+        $("#projects").hide();
+        $("#skills").hide();
         $("#moonSurface").css({
           top: (-10)+'vh'
         });
@@ -74,6 +136,26 @@
         $("#chat4").show();
         $("#chat5").hide();
         $("#chat6").hide();
+        $("#astronaut").show();
+        $(".zoom1").css("visibility", "visible");
+        $(".bg1").css("visibility", "visible");
+        $("#astronautMe").hide();
+        $("#martian1").hide();
+        $("#martian2").hide();
+        $("#martian3").hide();
+        $("#astronautMeAvatar").hide();
+        $("#martian1Avatar").hide();
+        $("#martian2Avatar").hide();
+        $("#martian3Avatar").hide();
+        $("#frame").hide();
+        $("#name").hide();
+        $("#userName").hide();
+        $("#orb1").hide();
+        $("#orb2").hide();
+        $("#orb3").hide();
+        $("#resume").hide();
+        $("#projects").hide();
+        $("#skills").hide();
         $("#moonSurface").css({
           top: (-10)+'vh'
         });
@@ -93,6 +175,26 @@
         $("#chat4").hide();
         $("#chat5").show();
         $("#chat6").hide();
+        $("#astronaut").show();
+        $(".zoom1").css("visibility", "visible");
+        $(".bg1").css("visibility", "visible");
+        $("#astronautMe").hide();
+        $("#martian1").hide();
+        $("#martian2").hide();
+        $("#martian3").hide();
+        $("#astronautMeAvatar").hide();
+        $("#martian1Avatar").hide();
+        $("#martian2Avatar").hide();
+        $("#martian3Avatar").hide();
+        $("#frame").hide();
+        $("#name").hide();
+        $("#userName").hide();
+        $("#orb1").hide();
+        $("#orb2").hide();
+        $("#orb3").hide();
+        $("#resume").hide();
+        $("#projects").hide();
+        $("#skills").hide();
         $("#moonSurface").css({
           top: (-10)+'vh'
         });
@@ -112,6 +214,26 @@
         $("#chat4").hide();
         $("#chat5").hide();
         $("#chat6").show();
+        $("#astronaut").show();
+        $(".zoom1").css("visibility", "visible");
+        $(".bg1").css("visibility", "visible");
+        $("#astronautMe").hide();
+        $("#martian1").hide();
+        $("#martian2").hide();
+        $("#martian3").hide();
+        $("#astronautMeAvatar").hide();
+        $("#martian1Avatar").hide();
+        $("#martian2Avatar").hide();
+        $("#martian3Avatar").hide();
+        $("#frame").hide();
+        $("#name").hide();
+        $("#userName").hide();
+        $("#orb1").hide();
+        $("#orb2").hide();
+        $("#orb3").hide();
+        $("#resume").hide();
+        $("#projects").hide();
+        $("#skills").hide();
         $("#moonSurface").css({
           top: (-10)+'vh'
         });
@@ -127,6 +249,9 @@
       }
 
       }else if(scroll >= 1550){
+        $("#liHome").removeClass("active");
+        $("#liAbout").removeClass("active");
+        $("#liContact").removeClass("active");
         $("#moonSurface").css({
           top: (-10+((scroll-1550)/10)*-1)+'vh'
         });
@@ -510,7 +635,7 @@
             $("#martian1").show();
             $("#martian2").show();
             $("#martian3").show();
-            $("#frameText").text("since you've visit Marc's portfolio, we are here to let you know about him");
+            $("#frameText").text("since you've visit Marc's portfolio, we can help you to know him better");
           }
 
           if (scroll >= 9000 && scroll < 9300) {
@@ -666,7 +791,7 @@
             $("#martian1").show();
             $("#martian2").show();
             $("#martian3").show();
-            $("#frameText").text("Thank you friends for all these info");
+            $("#frameText").text("Thank you friends for your help");
             $("#orb1").show();
             $("#resume").show();
             $("#orb2").show();
@@ -675,7 +800,10 @@
             $("#skills").show();
           }
 
-          if (scroll >= 11400 && scroll < 11700) {
+          if (scroll >= 11400 && scroll < 11900) {
+            $("#liHome").removeClass("active");
+            $("#liAbout").addClass("active");
+            $("#liContact").removeClass("active");
             $("#frame").show();
             $("#frameText").show();
             $("#astronautMe").removeClass('dim');
@@ -689,7 +817,7 @@
             $("#martian1").show();
             $("#martian2").show();
             $("#martian3").show();
-            $("#frameText").text("Alright, you can always jump in this area to view my information. Just click the ").append("<span class='valText'>About</span> link in our nav bar");
+            $("#frameText").text("You can always jump in this area to view my information. Just click the ").append("<span class='valText'>About</span> link in our nav bar. Thank you!");
             $("#orb1").show();
             $("#resume").show();
             $("#orb2").show();

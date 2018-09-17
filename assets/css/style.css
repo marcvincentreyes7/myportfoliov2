@@ -72,10 +72,6 @@ body{
 /*loader2*/
 *{margin:0;}
 
-/*body{
-  font: 200 16px/1 Helvetica, Arial, sans-serif;
-}*/
-
 /*img{width:32.2%;}*/
 
 #overlay{
@@ -112,17 +108,12 @@ body{
 
 
 
-
-
-
-
-
 #empty{
     height: 7400px;
     /*display: none;*/
 }
 #empty2{
-    height: 5500px;
+    height: 5000px;
     display: none;
 }
 
@@ -193,7 +184,7 @@ body{
 
 #moonSurface2{
     position: relative;
-    margin-top: 10px;
+    margin-top: 15px;
     height: 130vh;
     width: 100%;
     z-index: 10;
@@ -540,6 +531,11 @@ body{
     text-align: center!important;
 }
 
+.contactIcon{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
 
 
 
@@ -559,7 +555,7 @@ body{
         height: 7500px;
     }
     #empty2{
-        height: 5500px;
+        height: 5000px;
         display: none;
     }
 
@@ -785,7 +781,7 @@ body{
         height: 7250px;
     }
     #empty2{
-        height: 5500px;
+        height: 5000px;
         display: none;
     }
 
@@ -1001,7 +997,7 @@ body{
         height: 8000px;
     }
     #empty2{
-        height: 6000px;
+        height: 5000px;
         display: none;
     }
 
@@ -1152,7 +1148,7 @@ body{
         height: 7800px;
     }
     #empty2{
-        height: 6000px;
+        height: 5000px;
         display: none;
     }
 

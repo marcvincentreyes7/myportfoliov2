@@ -23,40 +23,40 @@
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	  crossorigin="anonymous">
 	</script>
+	
 
 </head>
 <body>
-	<div id="overlay">
-        <div id="progstat"></div>
-        <div id="progress"></div>
-     </div>
+
+<!-- for loading page -->
+<div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+</div>
 
 <div class="container-fluid" id="container">
 <!--Main Navigation-->
 <header>
 
     <nav class="navbar navbar-expand-lg navbar-dark pink scrolling-navbar fixed-top" id="navbar">
-        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+        <a class="navbar-brand" href="#"><strong></strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item" id="liHome">
+                    <a class="nav-link" href="#home" onclick="home()">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
+                <li class="nav-item" id="liAbout">
                     <a class="nav-link" href="#about" onclick="unlockScroll()">About</a>
+                </li>
+                <li class="nav-item" id="liContact">
+                    <a class="nav-link" onclick="openContact()">Contact</a>
                 </li>
             </ul>
             <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li class="nav-item">
@@ -64,14 +64,15 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"><i class="fa fa-instagram"></i></a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>
 
 </header>
-<!--Main Navigation-->
+<!--End of Main Navigation-->
 
+	<div id="home"></div>
 	<h1 style="position: fixed; top: 40vh; z-index: 9999999999; color: white; font-weight: bold; display: none">scrollCount: <span id="count"></span></h1>
 	<h1 style="position: fixed; top: 30vh; z-index: 9999999999; color: white; font-weight: bold; display: none">height: <span id="count2"></span></h1>
 
@@ -129,6 +130,7 @@
 	<div id="hiName"></div>
 	<div id="about"></div>
 
+	<!-- projects list modal -->
 	<!-- Central Modal Large -->
 	<div class="modal fade" id="projectsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
@@ -232,7 +234,7 @@
 	  </div>
 	  <!-- Central Modal Large -->
 
-
+<!-- skills list modal -->
 <!-- Central Modal Large -->
 	<div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
@@ -247,8 +249,6 @@
 	        </div>
 	        <div class="modal-body">
 	          <div class="row">
-
-
 
 	          	<!-- image -->
 	          	<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 skillsContainer">
@@ -393,8 +393,6 @@
 					</div>
 	          	</div>
 
-
-
 	          </div>	
 	        </div>
 	        <div class="modal-footer">
@@ -404,6 +402,51 @@
 	    </div>
 	  </div>
 	  <!-- Central Modal Large -->
+
+
+	  <!-- contact modal -->
+	 <!-- Side Modal Top Right -->
+		<div class="modal fade right" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		    <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+		    <div class="modal-dialog modal-side modal-bottom-right" role="document">
+
+
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <h4 class="modal-title w-100" id="myModalLabel">Contact Me:</h4>
+		          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		            <span aria-hidden="true">&times;</span>
+		          </button>
+		        </div>
+		        <div class="modal-body">
+		          <div class="row">
+		          	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		          		<a href="https://m.me/marcvincent.reyes" target="_blank">
+					    	<img class="contactIcon" src="assets/images/messenger.png">  Messenger
+						</a>
+		          	</div>
+		          	<br>
+		          	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		          		<a href="mailto:reyesmarcvincent@gmail.com">
+					    	<img class="contactIcon" src="assets/images/gmail.png">  reyesmarcvincent@gmail.com
+						</a>
+		          	</div>
+		          	<br>
+		          	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		          		<a href="tel:+639231935936">
+					    	<img class="contactIcon" src="assets/images/phone.png">  Phone: +639231935936
+						</a>
+		          	</div>
+		          </div>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="padding-top: 0.5em!important; padding-bottom: 0.5em!important">Close</button>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- Side Modal Top Right -->
 
 </div> <!-- end of container-fluid -->
 
@@ -421,6 +464,9 @@
 	}
 
 	function unlockScroll(){
+		$("#liAbout").addClass("active");
+		$("#liHome").removeClass("active");
+		$("#liContact").removeClass("active");
 		$("#empty2").show();
 		$("#name").hide();
 		$("#userName").hide();
@@ -432,6 +478,46 @@
 
 	function launchModalSkills(){
 		$("#skillsModal").modal('show');
+	}
+
+	function home(){
+		$("#liHome").addClass("active");
+		$("#liAbout").removeClass("active");
+		$("#liContact").removeClass("active");
+		$("#chat1").show();
+        $("#chat2").hide();
+        $("#chat3").hide();
+        $("#chat4").hide();
+        $("#chat5").hide();
+        $("#chat6").hide();
+        $("#astronaut").show();
+        $(".zoom1").css("visibility", "visible");
+        $(".bg1").css("visibility", "visible");
+        $("#astronautMe").hide();
+        $("#martian1").hide();
+        $("#martian2").hide();
+        $("#martian3").hide();
+        $("#astronautMeAvatar").hide();
+        $("#martian1Avatar").hide();
+        $("#martian2Avatar").hide();
+        $("#martian3Avatar").hide();
+        $("#frame").hide();
+        $("#frameText").hide();
+        $("#name").hide();
+        $("#userName").hide();
+        $("#orb1").hide();
+        $("#orb2").hide();
+        $("#orb3").hide();
+        $("#resume").hide();
+        $("#projects").hide();
+        $("#skills").hide();
+	}
+
+	function openContact(){
+		$("#contactModal").modal("show");
+		$("#liContact").addClass("active");
+		$("#liHome").removeClass("active");
+		$("#liAbout").removeClass("active");
 	}
 </script>
 
