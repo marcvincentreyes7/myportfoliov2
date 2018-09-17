@@ -551,6 +551,10 @@ body{
 /*mobile phone + galaxies*/
 @media only screen and (max-width: 40em){
 
+    .modal-dialog{
+        margin-top: 80em!important;
+    }
+
     #empty{
         height: 7500px;
     }
